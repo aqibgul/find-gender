@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-sevillana: var(--font-sevillana);
 }
 
 @media (prefers-color-scheme: dark) {
