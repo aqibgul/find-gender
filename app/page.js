@@ -38,9 +38,9 @@ const Home = () => {
         <h1 className="text-4xl font-sevillana font-bold ">Welcome</h1>
         <div
           className={`flex flex-col items-center 
-        gap-3 w-[20%] h-[50%] shadow-md   rounded-2xl p-3 ${
+        gap-3 sm:w-[20%] h-[50%] shadow-md   rounded-2xl p-3  ${
           isMale ? "bg-blue-200" : "bg-pink-200"
-        }`}
+        }  `}
         >
           <User
             className={`rounded-full  ${
