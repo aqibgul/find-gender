@@ -34,11 +34,11 @@ const Home = () => {
 
   return (
     <>
-      <div className="h-screen w-full  flex flex-col items-center justify-center ">
+      <div className="h-screen   flex flex-col items-center justify-center ">
         <h1 className="text-4xl font-sevillana font-bold ">Welcome</h1>
         <div
           className={`flex flex-col items-center 
-        gap-3 sm:w-[20%] h-[50%] shadow-md   rounded-2xl p-3  ${
+        gap-3    shadow-md   rounded-2xl p-3  ${
           isMale ? "bg-blue-200" : "bg-pink-200"
         }  `}
         >
