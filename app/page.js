@@ -48,7 +48,7 @@ const Home = () => {
             }`}
             size={58}
           />
-          <p className="text-3xl font-bold font-sevillana ">
+          <p className="text-3xl font-bold font-sevillana text-black  ">
             {inputValue || " Name"}
           </p>
           <p
@@ -62,8 +62,17 @@ const Home = () => {
             <div className=" xl:w-3xs  bg-gray-200 rounded-lg p-4">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-sm font-medium text-black-500 flex items-center">
-                  <Star className="size-4 " />
-                  Confidence
+                  <Star
+                    className={`size-4 rounded-full ${
+                      isMale ? "bg-blue-400" : "bg-pink-400"
+                    } `}
+                  />
+                  <p
+                    className={` p-2 m-1 rounded-l-2xl
+                   ${isMale ? "bg-blue-400" : "bg-pink-400"}`}
+                  >
+                    Confidence
+                  </p>
                 </span>
 
                 <span className="text-sm font-medium text-gray-800">
@@ -89,7 +98,8 @@ const Home = () => {
 
           <div className="  bg-gray-200 font-bold rounded-full p-1.5">
             <input
-              className=" bg-transparent outline-none text-center text-lg font-sevillana"
+              className=" bg-transparent text-black placeholder:text-gray-800
+               outline-none text-center text-lg font-sevillana"
               type="text"
               placeholder="Enter your name"
               value={inputValue}
